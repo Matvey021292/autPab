@@ -1,0 +1,21 @@
+@media screen and(max-width: 900px){
+.parallax-container_media, .title-bar, .top-bar{
+	display:  none !important;
+}
+
+
+}
+@media screen and(max-width: 700px){
+	section .section_image_last,
+	section .section_image_first{
+	transform:rotate(0);
+	}
+}
+@media screen and(min-width: 900px){
+#st-container{
+	display: none;
+}
+.baner_meia{
+	display:none;
+}
+}

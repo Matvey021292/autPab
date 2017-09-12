@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <title>Главная</title>
+     <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    
+</head>
+
+<body>
+        <header>
+            <!--#insert file="html/-header.html"-->
+        </header>
+        <section>
+             <!--#insert file="html/-section.html"-->
+        </section>
+        <section>
+             <!--#insert file="html/-section2.html"-->
+        </section>
+
+
+
+
+    <script src="js/jquery.js"></script>
+      <script src="js/menu/fixedmenuup.js"></script>
+    <script src="js/what-input.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/menu/classie.js"></script>
+
+    <script src="js/mediaMenu/classie.js"></script>
+    <script src="js/mediaMenu/sidebarEffects.js"></script>
+    <script src="js/headerslider/modernizr.custom.js"></script>
+    <script src="js/headerslider/classie.js"></script>
+    <script src="js/headerslider/main.js"></script>
+    <script src="js/slider/swiper.min.js"></script>
+    <script>
+      $(document).foundation();
+
+   </script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 30,
+        freeMode: true
+    });
+    </script>
+    <script>
+    var swiper = new Swiper('.swiper-container1', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        effect: 'cube',
+        width:400,
+        height:320,
+        grabCursor: true,
+        cube: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.1
+        }
+    });
+    </script>
+</body>
+</html>

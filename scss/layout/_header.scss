@@ -1,0 +1,146 @@
+body {
+    font-size: 1em;
+}
+
+header {
+    height: auto;
+    border-bottom: 10px solid rgb(91, 76, 92);
+}
+
+.head {
+    .top-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        width: 100%;
+        padding: 1rem;
+    }
+    .top-bar,
+    .top-bar ul {
+        background: transparent;
+            z-index: 2002;
+    }
+
+    .top-bar a {
+        font-weight: bold;
+        color: #fff;
+        font-size: 1.1em;
+    }
+    .top-bar-left {
+        display: flex;
+        justify-content: space-around;
+    }
+    .top-bar-left ul {}
+    .top-bar-left img {
+        position: absolute;
+    }
+    .small-12 {
+        position: relative;
+    }
+
+    ul.menu.align-center {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .menu a {
+        padding: .7em 2em;
+    }
+    .header_nav_main .menu--ariel .menu__item {
+        margin: 0;
+    }
+}
+
+.parallax {
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; // .banner_block{
+    // 	height:25%;
+    // 	background:#fff;
+    // 	display: inline-block;
+    // 	position:absolute;
+    // 	bottom: -10%;
+    // 	overflow: hidden;
+    // &:first-child{
+    // 	left:-20%;
+    // 	width:90%;
+    // 	    transform: rotate(10deg);
+    // 	    border-top: 10px solid;
+    // }
+    // &:last-child{
+    // 	right: -20%;
+    // 	width:50%;
+    // 	transform:rotate(-17deg);
+    // 	    border-top: 10px solid;
+    // }
+    // }
+}
+
+.codrops-top {
+    position: absolute;
+    bottom: -5%;
+    left: 10%;
+    width: 800px;
+    z-index: 1001;
+    display: flex;
+    &>img {
+        z-index: 1;
+    }
+}
+
+.baner {
+    background-image: url(../images/banner.png);
+    box-shadow: -13px 13px 30px;
+    transform: rotate(-5deg);
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    padding: 5px;
+    margin:auto;
+    ul {
+        flex: 1 1;
+    }
+    .baner_min {
+        background: rgba(0, 0, 0, 0.65);
+        margin: 2.3%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 4%;
+            transition: all 1s;
+            text-transform: uppercase;
+            
+        }
+    }
+}
+
+.logoBanner {
+    position: absolute;
+    top: 80px;
+    right: 1%;
+    z-index: 1001;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.59);
+    padding: 10px;
+}
+.baner_meia{
+    transform:rotate(0deg);
+}
+.baner_meia ul{
+    width:100%;
+    flex: auto;
+}
