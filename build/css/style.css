@@ -2148,7 +2148,8 @@ section .section_image_last {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    overflow: hidden; }
+    overflow: hidden;
+    border: 4px solid; }
     .swiper-container .swiper-slide .images_slider {
       transform: scale(1.01);
       transition: all 1s ease; }
