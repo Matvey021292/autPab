@@ -53,21 +53,16 @@
         freeMode: true
     });
     </script>
-    <script>
-    var swiper = new Swiper('.swiper-container1', {
-        pagination: '.swiper-pagination',
+   <script>
+    var swiper = new Swiper('.swiper-container_section', {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        effect: 'cube',
-        width:400,
-        height:320,
-        grabCursor: true,
-        cube: {
-            shadow: true,
-            slideShadows: true,
-            shadowOffset: 20,
-            shadowScale: 0.1
-        }
+        pagination: '.swiper-pagination_section',
+        paginationType: 'fraction',
+         direction: 'vertical',
+         mousewheelControl: true
+
+
     });
     </script>
 </body>

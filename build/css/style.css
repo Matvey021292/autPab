@@ -2073,16 +2073,12 @@ a.next::before {
 
 section .block {
   align-items: flex-start; }
-  section .block > .section_image {
-    background: #fff; }
-  section .block > .section_text {
-    background: #fff; }
 
 section .section_text {
   padding: 10px;
   background: #eee;
   height: 100%;
-  z-index: -2; }
+  margin: auto; }
   section .section_text h2 {
     font-size: 1.5em;
     text-align: center;
@@ -2099,28 +2095,25 @@ section .section_image {
   section .section_image img {
     width: 100%; }
 
-section .section_image_first {
-  transform: rotate(3deg) scale(1.05); }
+.swiper-container_section {
+  width: 90%;
+  height: 350px;
+  overflow: hidden;
+  margin: auto; }
+  .swiper-container_section .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    line-height: 300px;
+    background-size: cover;
+    background-position: center; }
+  .swiper-container_section .swiper-button-next, .swiper-container_section .swiper-container-rtl .swiper-button-prev,
+  .swiper-container_section .swiper-button-prev, .swiper-container_section .swiper-container-rtl .swiper-button-next {
+    right: auto;
+    top: auto; }
 
-section .section_image_last {
-  transform: rotate(-3deg) scale(1.05); }
-
-.swiper-container1 {
-  width: 400px;
-  height: 320px;
-  margin: 0 auto; }
-  .swiper-container1:after {
-    position: absolute;
-    width: 90%;
-    height: 12%;
-    left: 5%;
-    z-index: -1;
-    bottom: 0%;
-    content: "";
-    box-shadow: 0 50px 24px rgba(0, 0, 0, 0.24); }
-  .swiper-container1 .swiper-slide {
-    background-position: center;
-    background-size: cover; }
+.effect5 {
+  background: #eee; }
 
 .swiper-container {
   width: 98%;
@@ -2376,6 +2369,65 @@ section .section_image_last {
   -o-transform: rotate(3deg);
   -ms-transform: rotate(3deg);
   transform: rotate(3deg); }
+
+/*==================================================
+ * Effect 3
+ * ===============================================*/
+.effect3 {
+  position: relative; }
+
+.effect3:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg); }
+
+/*==================================================
+ * Effect 5
+ * ===============================================*/
+.effect5 {
+  position: relative; }
+
+.effect5:before, .effect5:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg); }
+
+.effect5:after {
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto; }
 
 /* Common styles for all menus */
 .center {
